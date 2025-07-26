@@ -2,9 +2,12 @@
 
 ### 如何使用
 
-1. **保存代码**: 将上面的代码复制并保存为一个 Python 文件，例如 `combine_code_files.py`。
-2. **打开终端/命令行**: 导航到保存 `combine_code_files.py` 文件的目录。
-3. **运行程序**:
+1. **保存代码**:
+2. ```bash
+3. github clone https://github.com/fuserh/combine_code_files.git
+4. ```
+5. **打开终端/命令行**: 导航到 `combine_code_files` 目录。
+6. **运行程序**:
     *   **基本用法**: 扫描默认支持的代码文件类型。
         ```bash
         python combine_code_files.py /path/to/your/code_folder combined_code.txt
@@ -17,7 +20,7 @@
         ```
         - `./my_project` 是当前目录下的 `my_project` 文件夹。
         - `-e .py .js .html .css` 指定了只处理 Python、JavaScript、HTML 和 CSS 文件。
-4. **查看结果**: 程序运行完毕后，在指定的输出路径下会生成一个 `.txt` 文件，里面包含了所有被扫描到的代码文件的内容，每个文件之间用 `--- 文件: ... ---` 分隔。
+7. **查看结果**: 程序运行完毕后，在指定的输出路径下会生成一个 `.txt` 文件，里面包含了所有被扫描到的代码文件的内容，每个文件之间用 `--- 文件: ... ---` 分隔。
 
 这个程序具有以下特点：
 *   **递归扫描**: 会进入指定文件夹的所有子文件夹进行查找。
